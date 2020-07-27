@@ -1,0 +1,12 @@
+<script>
+    var nombre = ['K', 'a', 'r', 'i', 'n', 'a'];
+    var apellido = ['R', 'o', 'd', 'r', 'i', 'g', 'u', 'e', 'z'];
+    var fullName = [];
+
+    fullName.push.apply(fullName, nombre);
+    fullName.push(' ');
+    fullName.push.apply(fullName, apellido);
+
+    var resultado = fullName.join('');
+    console.log(resultado);
+</script>

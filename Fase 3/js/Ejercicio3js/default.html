@@ -1,0 +1,19 @@
+<script>
+    var nombre = ['K', 'a', 'r', 'i', 'n', 'a'];
+    var letras = new Map();
+    for (var i = 0; i < nombre.length; i++)
+    {
+        if (!letras.has(nombre[i]))
+        {
+            letras.set(nombre[i],1);
+        } else {
+            var valor_ant = letras.get(nombre[i]);
+            letras.set(nombre[i],valor_ant+1);
+        }
+    }
+
+    letras.forEach((value, key, map) =>
+    {
+        console.log("La letra " + key + " aparece " + value + " vez/veces.");
+    })
+</script>
